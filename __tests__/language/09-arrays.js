@@ -12,7 +12,7 @@ describe("Arrays", () => {
 
   it("Arrays - 3", () => {
     var collection = ["a", "b", "c"];
-    expect(collection._).toBe(3);
+    expect(collection.length).toBe(3);
   });
 
   it("Arrays - 4", () => {
