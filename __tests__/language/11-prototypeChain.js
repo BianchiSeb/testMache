@@ -24,7 +24,7 @@ describe("Prototype chain", () => {
   });
 
   it("Prototype chain - 4", () => {
-    expect(child.hasOwnProperty("c")).toBe("false");
+    expect(child.hasOwnProperty("c")).toBe();
   });
 
   it("Prototype chain - 5", () => {
@@ -32,6 +32,6 @@ describe("Prototype chain", () => {
   });
 
   it("Prototype chain - 6", () => {
-    expect(child.d).toBe(_);
+    expect(child.d).toBe(undefined);
   });
 });
