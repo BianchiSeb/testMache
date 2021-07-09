@@ -2,7 +2,9 @@ describe("Variables", () => {
   nom = "Pierre";
 
   it("Variables - 1", () => {
-    // _
+    nom = "Thierry";
+    var window = {nom: "Thierry"};
+
     expect(nom).toBe("Thierry");
     expect(window.nom).toBe("Thierry");
   });
@@ -10,7 +12,8 @@ describe("Variables", () => {
   age = 6;
 
   it("Variables - 2", () => {
-    // _
+    //
+
     expect(age).toBe(4);
     expect(window.age).toBe(6);
   });
