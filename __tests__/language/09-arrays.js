@@ -38,7 +38,7 @@ describe("Arrays", () => {
 
   it("Arrays - 6", () => {
     var collection = [1, 2, 3, 4];
-    var result = collection.reduce(_);
+    var result = collection.reduce((accumulator, currentValue) => accumulator * currentValue);
     expect(result).toBe(24);
   });
 
