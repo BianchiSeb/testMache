@@ -53,7 +53,7 @@ describe("Control structures", () => {
         result = "Merry";
         break;
     }
-    expect(result).toBe(_);
+    expect(result).toBe("Merry");
   });
 
   it("Control structures - 6", () => {
