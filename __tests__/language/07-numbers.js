@@ -2,9 +2,9 @@ describe("Numbers", () => {
   it("Numbers - 1", () => {
     var typeOfIntegers = typeof 6;
     var typeOfFloats = typeof 3.14159;
-    expect(typeOfIntegers === typeOfFloats).toBe(_);
-    expect(typeOfIntegers).toBe(_);
-    expect(1.0 === _).toBe(true);
+    expect(typeOfIntegers === typeOfFloats).toBe(true);
+    expect(typeOfIntegers).toBe("number");
+    expect(1.0 === _).toBe(new Error("error: Uncaught ReferenceError: _ is not defined"));
   });
 
   it("Numbers - 2", () => {
