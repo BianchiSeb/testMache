@@ -21,7 +21,8 @@ describe("Numbers", () => {
 
   it("Numbers - 4", () => {
     // indice: partir de 42, base 16
-    expect(_).toBe("2a");
+    let nb = 42;
+    expect(nb.toString(16)).toBe("2a");
   });
 
   it("Numbers - 5", () => {
