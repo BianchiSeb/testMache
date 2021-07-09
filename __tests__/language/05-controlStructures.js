@@ -22,7 +22,7 @@ describe("Control structures", () => {
         result = 2;
         break;
     }
-    expect(result).toBe(_);
+    expect(result).toBe(2);
   });
 
   it("Control structures - 4", () => {
