@@ -4,7 +4,7 @@ describe("Operators", () => {
     for (let i = 0; i <= 3; i++) {
       result = result + i;
     }
-    expect(result).toBe(_);
+    expect(result).toBe(6);
   });
 
   it("Operators - 2", () => {
@@ -12,7 +12,7 @@ describe("Operators", () => {
     for (let i = 0; i <= 3; i++) {
       result += i;
     }
-    expect(result).toBe(_);
+    expect(result).toBe(6);
   });
 
   it("Operators - 3", () => {
@@ -20,7 +20,7 @@ describe("Operators", () => {
     for (let i = 0; i <= 2; i++) {
       result = result - i;
     }
-    expect(result).toBe(_);
+    expect(result).toBe(0);
   });
 
   it("Operators - 4", () => {
@@ -28,31 +28,31 @@ describe("Operators", () => {
     for (let i = 0; i <= 2; i++) {
       result -= i;
     }
-    expect(result).toBe(_);
+    expect(result).toBe(0);
   });
 
   it("Operators - 5", () => {
     var result = 11;
     var x = 5;
     result %= x;
-    expect(result).toBe(_);
+    expect(result).toBe(1);
   });
 
   it("Operators - 6", () => {
     var result = 2 * 5 + 90 / 2 - 13;
-    expect(result).toBe(_);
+    expect(result).toBe(42);
   });
 
   it("Operators - 7", () => {
     // prettier-ignore
     var result = true && true || false && false;
-    expect(result).toBe(_);
+    expect(result).toBe(true);
   });
 
   it("Operators - 8", () => {
     // prettier-ignore
     var result = false && true || true && true;
-    expect(result).toBe(_);
+    expect(result).toBe(true);
   });
 
   it("Operators - 9", () => {
@@ -70,10 +70,10 @@ describe("Operators", () => {
       log("Body");
     }
 
-    expect(result[0]).toBe(_);
-    expect(result[1]).toBe(_);
-    expect(result[2]).toBe(_);
-    expect(result[3]).toBe(_);
-    expect(result[4]).toBe(_);
+    expect(result[0]).toBe('Start');
+    expect(result[1]).toBe('Condition');
+    expect(result[2]).toBe('Body');
+    expect(result[3]).toBe('Increment');
+    expect(result[4]).toBe('Condition');
   });
 });
