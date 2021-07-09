@@ -28,5 +28,11 @@ describe("Testing", () => {
     expect(count).toBe(5);
   });
 
+  it("Check Correct Key/Value - 2", () => {
+    expect(resultNucleose["at"]).toBe(2);
+    expect(resultNucleose["gc"]).toBe(1);
+    expect(resultNucleose["ct"]).toBe(2);
+  });
+
 
 });
