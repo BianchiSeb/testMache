@@ -22,7 +22,7 @@ describe("Variables", () => {
   });
 
   it("Variables - 3", () => {
-    expect(company).toBe(_);
+    expect(company).toBe(undefined);
     var company = "sfeir";
   });
 
