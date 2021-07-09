@@ -5,7 +5,7 @@ describe("Functions and Closure", () => {
       result = "b";
     }
     changeResult();
-    expect(result).toBe(_);
+    expect(result).toBe("b");
   });
 
   it("Functions and Closure - 2", () => {
