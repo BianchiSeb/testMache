@@ -36,9 +36,13 @@ describe("Arrays", () => {
     expect(odd).toEqual([1, 3, 5, 7, 9]);
   });
 
+  function sum (previousValue, currentValue) {
+    return previousValue * currentValue;
+  }
+
   it("Arrays - 6", () => {
     var collection = [1, 2, 3, 4];
-    var result = collection.reduce(_);
+    var result = collection.reduce(sum);
     expect(result).toBe(24);
   });
 
