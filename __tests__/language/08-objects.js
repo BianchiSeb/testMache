@@ -41,7 +41,7 @@ describe("Objects", () => {
       knows(something) {
         return false;
       },
-      // _
+      get fullname() { return `${this.firstname} ${this.lastname}`}
     };
     expect(person.fullname).toBe("Jon Snow");
     person.firstname = "Aegon";
