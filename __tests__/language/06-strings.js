@@ -3,9 +3,9 @@ describe("Strings", () => {
     // prettier-ignore
     var singleQuotedString = 'apple';
     var doubleQuotedString = "apple";
-    expect(singleQuotedString === doubleQuotedString).toBe(_);
-    expect(typeof singleQuotedString).toBe(_);
-    expect(typeof doubleQuotedString).toBe(_);
+    expect(singleQuotedString === doubleQuotedString).toBe(true);
+    expect(typeof singleQuotedString).toBe("string");
+    expect(typeof doubleQuotedString).toBe("string");
   });
 
   it("Strings - 2", () => {
