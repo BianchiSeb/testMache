@@ -24,7 +24,7 @@ describe("Coercion", () => {
   });
 
   it("Coercion - 7", () => {
-    expect(typeof (/3/ + 7)).toBe(_);
+    expect(typeof (/3/ + 7)).toBe("string");
   });
 
   it("Coercion - 8", () => {
