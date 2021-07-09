@@ -26,7 +26,7 @@ describe("Objects", () => {
       name: "Jean Paul",
       age: 25,
       toString: function() {
-        return _;
+        return `My name is ${this.name} and I am ${this.age} years old.`;
       },
     };
     expect(person.toString()).toBe(
