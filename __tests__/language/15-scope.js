@@ -10,7 +10,7 @@ describe("Scopes", () => {
 
     (function() {
       var anotherFruit = "orange";
-      expect(fruit).toBe("banana");
+      expect(fruit).toBe("banana" );
       expect(anotherFruit).toBe("orange");
     })();
 
