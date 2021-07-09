@@ -3,7 +3,7 @@ describe("This", () => {
     var person = {
       name: "bob",
       intro() {
-        return "Hello, my name is " + _;
+        return "Hello, my name is " + this.name;
       },
     };
     expect(person.intro()).toBe("Hello, my name is bob");
