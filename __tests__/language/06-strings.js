@@ -17,7 +17,7 @@ describe("Strings", () => {
 
   it("Strings - 3", () => {
     var characterType = typeof "Amory".charAt(1);
-    expect(characterType).toBe(_);
+    expect(characterType).toBe("string");
   });
 
   it("Strings - 4", () => {
