@@ -62,7 +62,7 @@ describe("Arrays", () => {
     var stack = [];
     stack.push("first");
     stack.push("second");
-    expect(stack.pop()).toBe(_);
-    expect(stack.pop()).toBe(_);
+    expect(stack.pop()).toBe("second");
+    expect(stack.pop()).toBe("first");
   });
 });
