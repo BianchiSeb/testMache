@@ -32,7 +32,7 @@ describe("Coercion", () => {
   });
 
   it("Coercion - 9", () => {
-    expect(+"3" + +"7" == "37").toBe(_);
+    expect(+"3" + +"7" == "37").toBe(false);
   });
 
   it("Coercion - 10", () => {
