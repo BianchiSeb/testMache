@@ -1,6 +1,6 @@
 describe("Coercion", () => {
   it("Coercion - 1", () => {
-    expect(3 + 7 === 10).toBe(_);
+    expect(3 + 7 === 10).toBe(true);
   });
 
   it("Coercion - 2", () => {
