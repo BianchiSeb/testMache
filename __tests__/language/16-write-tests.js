@@ -17,5 +17,7 @@ describe("Testing", () => {
   // Exemple:
   countNucleobases("atgccgatgactgact"); //  { at: 2, gc: 1, cg: 1, ga: 2, ct: 2 }
 
-  // Write some tests !
+  it("write-test - 1", () => {
+    expect(countNucleobases("atgccgatgactgact").at).toBe(2);
+  });
 });
