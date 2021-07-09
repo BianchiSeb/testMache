@@ -16,7 +16,7 @@ describe("Coercion", () => {
   });
 
   it("Coercion - 5", () => {
-    expect("3" + 7 == "37").toBe(_);
+    expect("3" + 7 == "37").toBe(true);
   });
 
   it("Coercion - 6", () => {
