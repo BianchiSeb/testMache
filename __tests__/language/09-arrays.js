@@ -48,7 +48,7 @@ describe("Arrays", () => {
 
   it("Arrays - 7", () => {
     var collection = [1, 2, 3];
-    expect(_).toEqual([2, 4, 6]);
+    expect(collection.map(x => x * 2)).toEqual([2, 4, 6]);
   });
 
   it("Arrays - 8", () => {
