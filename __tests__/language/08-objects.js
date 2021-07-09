@@ -1,12 +1,13 @@
 describe("Objects", () => {
   it("Objects - 1", () => {
     var result = {};
-    expect(typeof result).toBe(_);
+    expect(typeof result).toBe('object');
   });
 
   it("Objects - 2", () => {
     var person = {
-      // _
+      name: 'Arthur',
+      age: 51
     };
     expect("name" in person).toBe(true);
     expect(person.age).toBe(51);
@@ -14,9 +15,9 @@ describe("Objects", () => {
 
   it("Objects - 3", () => {
     var person = {};
-    Object.assign(person, _);
+    Object.assign(person, {name:"Jean Paul"});
     expect(person.name).toBe("Jean Paul");
-    person; // _
+    person["phone-number"] = '0145254515'; // _
     expect(person["phone-number"]).toBe("0145254515");
   });
 
@@ -25,7 +26,7 @@ describe("Objects", () => {
       name: "Jean Paul",
       age: 25,
       toString: function() {
-        return _;
+        return `My name is ${person.name} and I am ${person.age} years old.`;
       },
     };
     expect(person.toString()).toBe(
@@ -40,7 +41,6 @@ describe("Objects", () => {
       knows(something) {
         return false;
       },
-      // _
     };
     expect(person.fullname).toBe("Jon Snow");
     person.firstname = "Aegon";
