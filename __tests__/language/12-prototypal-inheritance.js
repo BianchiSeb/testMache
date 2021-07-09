@@ -48,7 +48,7 @@ describe("Prototype inheritance", () => {
 
   it("Prototype inheritance - 4", () => {
     var lenny = new Bat("Lenny", "1.5m");
-    expect(lenny.sayHi()).toBe(_);
-    expect(lenny.wingspan).toBe(_);
+    expect(lenny.sayHi()).toBe("Hello, my name is Lenny");
+    expect(lenny.wingspan).toBe("1.5m");
   });
 });
