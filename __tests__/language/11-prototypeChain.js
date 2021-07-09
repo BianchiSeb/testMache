@@ -24,11 +24,11 @@ describe("Prototype chain", () => {
   });
 
   it("Prototype chain - 4", () => {
-    expect(child.hasOwnProperty("c")).toBe(_);
+    expect(child.hasOwnProperty("c")).toBe("false");
   });
 
   it("Prototype chain - 5", () => {
-    expect(child.c).toBe(_);
+    expect(child.c).toBe(4);
   });
 
   it("Prototype chain - 6", () => {
