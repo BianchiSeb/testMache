@@ -35,7 +35,7 @@ describe("Operators", () => {
     var result = 11;
     var x = 5;
     result %= x;
-    expect(result).toBe(_);
+    expect(result).toBe(1);
   });
 
   it("Operators - 6", () => {
