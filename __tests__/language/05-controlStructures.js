@@ -9,7 +9,7 @@ describe("Control structures", () => {
 
   it("Control structures - 2", () => {
     var fruit = true ? "orange" : "banana";
-    expect(fruit).toBe(_);
+    expect(fruit).toBe("orange");
   });
 
   it("Control structures - 3", () => {
