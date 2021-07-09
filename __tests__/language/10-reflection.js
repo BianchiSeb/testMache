@@ -44,8 +44,8 @@ describe("Reflection : ", () => {
   it("Reflection - 3", () => {
     var a = new A();
     var b = new B();
-    expect(typeof a.constructor).toBe(_);
-    expect(a.constructor.name).toBe(_);
-    expect(b.constructor.name).toBe(_);
+    expect(typeof a.constructor).toBe("function");
+    expect(a.constructor.name).toBe("A");
+    expect(b.constructor.name).toBe("A");
   });
 });
