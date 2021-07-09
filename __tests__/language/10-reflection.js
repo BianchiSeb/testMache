@@ -4,8 +4,8 @@ describe("Reflection : ", () => {
     var values = [];
     var person = { name: "Thierry LAU", age: 30, unemployed: true };
     for (const propertyName in person) {
-      keys.push(_);
-      values.push(_);
+      keys.push(propertyName);
+      values.push(person[propertyName]);
     }
     expect(keys).toEqual(["name", "age", "unemployed"]);
     expect(values).toEqual(["Thierry LAU", 30, true]);
