@@ -6,7 +6,8 @@ describe("Objects", () => {
 
   it("Objects - 2", () => {
     var person = {
-      // _
+      name: true,
+      age: 51
     };
     expect("name" in person).toBe(true);
     expect(person.age).toBe(51);
