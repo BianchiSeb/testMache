@@ -15,8 +15,8 @@ describe("Numbers", () => {
 
   it("Numbers - 3", () => {
     var result = 7 / "7";
-    expect(isNaN(result)).toBe(_);
-    expect(result).toBe(_);
+    expect(isNaN(result)).toBe(false);
+    expect(result).toBe(1);
   });
 
   it("Numbers - 4", () => {
