@@ -15,7 +15,18 @@ describe("Testing", () => {
   }
 
   // Exemple:
-  countNucleobases("atgccgatgactgact"); //  { at: 2, gc: 1, cg: 1, ga: 2, ct: 2 }
+  var resultNucleose = countNucleobases("atgccgatgactgact"); //  { at: 2, gc: 1, cg: 1, ga: 2, ct: 2 }
 
   // Write some tests !
+  it("Check Size - 1", () => {
+    var count = 0;
+
+    for(var prop in resultNucleose) {
+        if(resultNucleose.hasOwnProperty(prop))
+            count += 1;
+    }
+    expect(count).toBe(5);
+  });
+
+
 });
