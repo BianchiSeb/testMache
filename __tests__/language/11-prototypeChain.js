@@ -20,7 +20,7 @@ describe("Prototype chain", () => {
 
   it("Prototype chain - 3", () => {
     delete child.b;
-    expect(child.b).toBe();
+    expect(child.b).toBe(3);
   });
 
   it("Prototype chain - 4", () => {
