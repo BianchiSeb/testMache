@@ -28,7 +28,7 @@ describe("Operators", () => {
     for (let i = 0; i <= 2; i++) {
       result -= i;
     }
-    expect(result).toBe(_);
+    expect(result).toBe(0);
   });
 
   it("Operators - 5", () => {
