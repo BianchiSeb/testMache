@@ -28,8 +28,8 @@ describe("Reflection : ", () => {
     for (propertyName in b) {
       keys.push(propertyName);
     }
-    expect(keys.length).toBe(_);
-    expect(keys).toEqual(_);
+    expect(keys.length).toBe(1);
+    expect(keys).toEqual("B");
 
     var ownKeys = [];
     for (propertyName in b) {
@@ -37,8 +37,8 @@ describe("Reflection : ", () => {
         ownKeys.push(propertyName);
       }
     }
-    expect(ownKeys.length).toBe(_);
-    expect(ownKeys).toEqual(_);
+    expect(ownKeys.length).toBe(2);
+    expect(ownKeys).toEqual("bb");
   });
 
   it("Reflection - 3", () => {
