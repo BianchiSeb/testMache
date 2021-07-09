@@ -50,7 +50,7 @@ describe("Arrays", () => {
   it("Arrays - 8", () => {
     var array1 = [1, 2, 3];
     var array2 = [4, 5, 6];
-    expect(_).toEqual([1, 2, 3, 4, 5, 6]);
+    expect(array1.concat(array2)).toEqual([1, 2, 3, 4, 5, 6]);
     expect([_]).toEqual([1, 2, 3, 4, 5, 6]);
   });
 
