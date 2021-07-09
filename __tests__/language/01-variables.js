@@ -2,7 +2,6 @@ describe("Variables", () => {
  nom = "Pierre";
 
   it("Variables - 1", () => {
-    nom = "Thierry";
     expect(nom).toBe("Thierry");
     expect(window.nom).toBe("Thierry");
   });
@@ -11,12 +10,12 @@ describe("Variables", () => {
 
 
   it("Variables - 2", () => {
-    expect(age).toBe(6);
+    expect(age).toBe(4);
     expect(window.age).toBe(6);
   });
 
   it("Variables - 3", () => {
-    expect(company).toBe(_);
+    expect(company).toBe(undefined);
     var company = "sfeir";
   });
 
