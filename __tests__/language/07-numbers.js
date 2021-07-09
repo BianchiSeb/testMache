@@ -27,6 +27,6 @@ describe("Numbers", () => {
 
   it("Numbers - 5", () => {
     var pi = Math.PI;
-    expect(~~pi).toBe(_);
+    expect(~~pi).toBe(3);
   });
 });
