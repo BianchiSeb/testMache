@@ -18,4 +18,8 @@ describe("Testing", () => {
   countNucleobases("atgccgatgactgact"); //  { at: 2, gc: 1, cg: 1, ga: 2, ct: 2 }
 
   // Write some tests !
+  it("Testing - 1", () => {
+    let result = countNucleobases("atatgccgatgactgact");
+    expect(result).toEqual({ "at": 3, "gc": 1, "cg": 1, "ga": 2, "ct": 2 });
+  });
 });
