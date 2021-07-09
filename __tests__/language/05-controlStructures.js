@@ -58,9 +58,9 @@ describe("Control structures", () => {
 
   it("Control structures - 6", () => {
     var fruit = null || "banana";
-    expect(fruit).toBe(_);
+    expect(fruit).toBe("banana");
 
     var myFavouriteFruit = fruit || "apple";
-    expect(myFavouriteFruit).toBe(_);
+    expect(myFavouriteFruit).toBe("banana");
   });
 });
