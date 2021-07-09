@@ -12,7 +12,7 @@ describe("Prototype inheritance", () => {
   var eric = new Mammal("Eric");
 
   it("Prototype inheritance - 1", () => {
-    expect(eric.sayHi()).toBe(_);
+    expect(eric.sayHi()).toBe("Hello, my name is Eric");
   });
 
   Mammal.prototype.favouriteSaying = function() {
@@ -21,8 +21,8 @@ describe("Prototype inheritance", () => {
 
   it("Prototype inheritance - 2", () => {
     var bobby = new Mammal("Bobby");
-    expect(eric.favouriteSaying()).toBe(_);
-    expect(bobby.favouriteSaying()).toBe(_);
+    expect(eric.favouriteSaying()).toBe("Eric's favourite saying is Hello, my name is Eric");
+    expect(bobby.favouriteSaying()).toBe("Bobby's favourite saying is Hello, my name is Bobby");
   });
 
   it("Prototype inheritance - 3", () => {
@@ -32,7 +32,7 @@ describe("Prototype inheritance", () => {
         return this.name.length;
       },
     });
-    expect(paul.numberOfLettersInName).toBe(_);
+    expect(paul.numberOfLettersInName).toBe(4);
   });
 
   function extend(child, supertype) {
@@ -48,7 +48,8 @@ describe("Prototype inheritance", () => {
 
   it("Prototype inheritance - 4", () => {
     var lenny = new Bat("Lenny", "1.5m");
-    expect(lenny.sayHi()).toBe(_);
-    expect(lenny.wingspan).toBe(_);
+    expect(lenny.sayHi()).toBe("Hello, my name is Lenny");
+    expect(lenny.wingspan).toBe("1.5m");
   });
 });
+
