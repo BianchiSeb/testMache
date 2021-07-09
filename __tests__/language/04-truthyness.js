@@ -28,7 +28,7 @@ describe("Truthyness", () => {
   });
 
   it("Truthyness - 6", () => {
-    expect(isTruthy(new Boolean(false))).toBe(_);
+    expect(isTruthy(new Boolean(false))).toBe(true);
   });
 
   it("Truthyness - 7", () => {
