@@ -2,7 +2,7 @@ describe("Scopes", () => {
   variable = 42;
 
   it("Scopes - 1", () => {
-    expect(variable).toBe(_);
+    expect(variable).toBe(42);
   });
 
   it("Scopes - 2", () => {
