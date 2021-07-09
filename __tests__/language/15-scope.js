@@ -2,7 +2,7 @@ describe("Scopes", () => {
   variable = 42;
 
   it("Scopes - 1", () => {
-    expect(variable).toBe(_);
+    expect(variable).toBe(42);
   });
 
   it("Scopes - 2", () => {
@@ -10,11 +10,11 @@ describe("Scopes", () => {
 
     (function() {
       var anotherFruit = "orange";
-      expect(fruit).toBe(_);
-      expect(anotherFruit).toBe(_);
+      expect(fruit).toBe("banana");
+      expect(anotherFruit).toBe("orange");
     })();
 
-    expect(fruit).toBe(_);
-    expect(typeof anotherFruit).toBe(_);
+    expect(fruit).toBe("banana");
+    expect(typeof anotherFruit).toBe("undefined");
   });
 });
