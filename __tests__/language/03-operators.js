@@ -40,7 +40,7 @@ describe("Operators", () => {
 
   it("Operators - 6", () => {
     var result = 2 * 5 + 90 / 2 - 13;
-    expect(result).toBe(_);
+    expect(result).toBe(42);
   });
 
   it("Operators - 7", () => {
