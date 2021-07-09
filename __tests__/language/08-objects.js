@@ -1,7 +1,7 @@
 describe("Objects", () => {
   it("Objects - 1", () => {
     var result = {};
-    expect(typeof result).toBe(_);
+    expect(typeof result).toBe("object");
   });
 
   it("Objects - 2", () => {
