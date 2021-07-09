@@ -32,7 +32,7 @@ describe("Prototype inheritance", () => {
         return this.name.length;
       },
     });
-    expect(paul.numberOfLettersInName).toBe(_);
+    expect(paul.numberOfLettersInName).toBe(4);
   });
 
   function extend(child, supertype) {
