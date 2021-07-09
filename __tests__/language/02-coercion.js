@@ -36,6 +36,6 @@ describe("Coercion", () => {
   });
 
   it("Coercion - 10", () => {
-    expect("3" + "7" == 37).toBe(_);
+    expect("3" + "7" == 37).toBe(true);
   });
 });
