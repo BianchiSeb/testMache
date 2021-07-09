@@ -18,15 +18,15 @@ describe("Functions and Closure", () => {
   it("Functions and Closure - 3", () => {
     var value = "orange";
 
-    (function(_) {
+    (function(val) {
       var anotherValue = "blue";
       expect(val).toBe("orange");
-      expect(typeof value).toBe(_);
-      expect(typeof anotherValue).toBe(_);
+      expect(typeof value).toBe("string");
+      expect(typeof anotherValue).toBe("string");
     })(_);
 
-    expect(typeof anotherValue).toBe(_);
-    expect(typeof value).toBe(_);
+    expect(typeof anotherValue).toBe(undefined);
+    expect(typeof value).toBe("string");
   });
 
   it("Functions and Closure - 4", () => {

@@ -15,9 +15,9 @@ describe("Objects", () => {
 
   it("Objects - 3", () => {
     var person = {};
-    Object.assign(person, {"name":"Jean Paul", "phone-number":"0145254515"});
+    Object.assign(person, {"name":"Jean Paul", "phone-number":"0666666"});
     expect(person.name).toBe("Jean Paul");
-    person; // _
+    person["phone-number"] = "0145254515"; 
     expect(person["phone-number"]).toBe("0145254515");
   });
 

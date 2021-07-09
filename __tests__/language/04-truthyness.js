@@ -32,7 +32,7 @@ describe("Truthyness", () => {
   });
 
   it("Truthyness - 7", () => {
-    expect(new Boolean(false)._()).toBe(Error);
+    expect(new Boolean(false)._()).toBe(false);
   });
 
   it("Truthyness - 8", () => {

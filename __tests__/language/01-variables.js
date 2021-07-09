@@ -1,5 +1,5 @@
 describe("Variables", () => {
-  var nom = "Pierre";
+ nom = "Pierre";
 
   it("Variables - 1", () => {
     nom = "Thierry";
@@ -16,7 +16,7 @@ describe("Variables", () => {
   });
 
   it("Variables - 3", () => {
-    expect(company).toBe();
+    expect(company).toBe(_);
     var company = "sfeir";
   });
 
