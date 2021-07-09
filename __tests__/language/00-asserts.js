@@ -8,7 +8,7 @@ describe("About test assertions: ", () => {
   });
 
   it("you should know what will satisfy the toBe assertion", () => {
-    expect(_).toBe("3");
+    expect("3").toBe("3");
   });
 
   it("you should know what will satisfy the not assertion", () => {
