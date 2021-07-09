@@ -28,7 +28,7 @@ describe("Variables", () => {
     var i, j;
 
     for (var i = 0; i < 1; i++) {}
-    expect(i).toBe(0);
+    expect(i).toBe(1);
 
     for (let j = 0; j < 1; j++) {}
     expect(j).toBe();
