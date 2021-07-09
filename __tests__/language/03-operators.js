@@ -52,7 +52,7 @@ describe("Operators", () => {
   it("Operators - 8", () => {
     // prettier-ignore
     var result = false && true || true && true;
-    expect(result).toBe(_);
+    expect(result).toBe(true);
   });
 
   it("Operators - 9", () => {
