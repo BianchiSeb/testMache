@@ -25,9 +25,9 @@ describe("Arrays", () => {
       "Saturday",
       "Sunday",
     ];
-    var workingWeek = daysOfWeek.splice(_, _);
-    expect(daysOfWeek).toEqual(_);
-    expect(workingWeek).toEqual(_);
+    var workingWeek = daysOfWeek.splice(0, 0);
+    expect(daysOfWeek).toEqual(["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"])
+    expect(workingWeek).toEqual([]);
   });
 
   it("Arrays - 5", () => {
