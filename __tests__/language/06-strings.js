@@ -27,6 +27,6 @@ describe("Strings", () => {
 
   it("Strings - 5", () => {
     var fruit = "pineapples";
-    expect(fruit.slice(_, _)).toBe("apple");
+    expect(fruit.slice(4, 9)).toBe("apple");
   });
 });
