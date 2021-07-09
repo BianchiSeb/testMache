@@ -12,7 +12,7 @@ describe("Coercion", () => {
   });
 
   it("Coercion - 4", () => {
-    expect(new Date(3) + 7 == "10").toBe();
+    expect(new Date(3) + 7 == "10").toBe(false);
   });
 
   it("Coercion - 5", () => {
