@@ -9,7 +9,9 @@ describe("Functions and Closure", () => {
   });
 
   it("Functions and Closure - 2", () => {
-    var action = _;
+    var action = function(x){
+      return 12;
+    };
     expect(action(4)).toBe(12);
   });
 
