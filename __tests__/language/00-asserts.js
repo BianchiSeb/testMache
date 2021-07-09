@@ -12,6 +12,6 @@ describe("About test assertions: ", () => {
   });
 
   it("you should know what will satisfy the not assertion", () => {
-    expect(_).not.toBe("3");
+    expect("42").not.toBe("666");
   });
 });
