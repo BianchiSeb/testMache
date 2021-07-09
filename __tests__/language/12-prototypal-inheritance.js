@@ -21,8 +21,8 @@ describe("Prototype inheritance", () => {
 
   it("Prototype inheritance - 2", () => {
     var bobby = new Mammal("Bobby");
-    expect(eric.favouriteSaying()).toBe(_);
-    expect(bobby.favouriteSaying()).toBe(_);
+    expect(eric.favouriteSaying()).toBe("Eric's favourite saying is Hello, my name is Eric");
+    expect(bobby.favouriteSaying()).toBe("Bobby's favourite saying is Hello, my name is Bobby");
   });
 
   it("Prototype inheritance - 3", () => {
