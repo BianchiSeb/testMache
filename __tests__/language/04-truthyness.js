@@ -28,14 +28,14 @@ describe("Truthyness", () => {
   });
 
   it("Truthyness - 6", () => {
-    expect(isTruthy(new Boolean(false))).toBe(_);
+    expect(isTruthy(new Boolean(false))).toBe(true);
   });
 
   it("Truthyness - 7", () => {
-    expect(new Boolean(false)._()).toBe(false);
+    expect(new Boolean(false)._()).toBe(Error);
   });
 
   it("Truthyness - 8", () => {
-    expect(new Boolean(false) == false).toBe(_);
+    expect(new Boolean(false) == false).toBe();
   });
 });
