@@ -21,8 +21,8 @@ describe("Testing", () => {
   it("Check Size - 1", () => {
     var count = 0;
 
-    for(var prop in resultNucleose) {
-        if(resultNucleose.hasOwnProperty(prop))
+    for (var prop in resultNucleose) {
+        if (resultNucleose.hasOwnProperty(prop))
             count += 1;
     }
     expect(count).toBe(5);
@@ -32,7 +32,20 @@ describe("Testing", () => {
     expect(resultNucleose["at"]).toBe(2);
     expect(resultNucleose["gc"]).toBe(1);
     expect(resultNucleose["ct"]).toBe(2);
+    expect(resultNucleose["AH"]).toBe(undefined);
   });
 
+  it("Check Empty - 3", () => {
+    var emptyNucleose = countNucleobases(""); //  {}
+
+    var count = 0;
+
+    for (var prop in emptyNucleose) {
+        if (emptyNucleose.hasOwnProperty(prop))
+            count += 1;
+    }
+    expect(count).toBe(0);
+    expect(emptyNucleose["at"]).toBe(undefined);
+  });
 
 });
