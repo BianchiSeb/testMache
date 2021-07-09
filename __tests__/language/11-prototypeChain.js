@@ -9,18 +9,18 @@ describe("Prototype chain", () => {
   child.b = 2;
 
   it("Prototype chain - 1", () => {
-    expect(child.hasOwnProperty("a")).toBe(_);
-    expect(child.hasOwnProperty("b")).toBe(_);
+    expect(child.hasOwnProperty("a")).toBe("true");
+    expect(child.hasOwnProperty("b")).toBe("true");
   });
 
   it("Prototype chain - 2", () => {
-    expect(child.a).toBe(_);
-    expect(child.b).toBe(_);
+    expect(child.a).toBe(1);
+    expect(child.b).toBe(2);
   });
 
   it("Prototype chain - 3", () => {
     delete child.b;
-    expect(child.b).toBe(_);
+    expect(child.b).toBe();
   });
 
   it("Prototype chain - 4", () => {
