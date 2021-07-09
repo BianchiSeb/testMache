@@ -4,7 +4,7 @@ describe("Control structures", () => {
     if (2 > 0) {
       result = true;
     }
-    expect(result).toBe(_);
+    expect(result).toBe(true);
   });
 
   it("Control structures - 2", () => {
