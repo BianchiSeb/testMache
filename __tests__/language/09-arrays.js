@@ -7,7 +7,7 @@ describe("Arrays", () => {
   });
 
   it("Arrays - 2", () => {
-    expect(typeof []).toBe(_);
+    expect(typeof []).toBe("object");
   });
 
   it("Arrays - 3", () => {
