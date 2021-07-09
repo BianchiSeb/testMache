@@ -9,8 +9,8 @@ describe("Numbers", () => {
 
   it("Numbers - 2", () => {
     var result = 7 / "beers";
-    expect(isNaN(result)).toBe(_);
-    expect(result == NaN).toBe(_);
+    expect(isNaN(result)).toBe(true);
+    expect(result == NaN).toBe(false);
   });
 
   it("Numbers - 3", () => {
