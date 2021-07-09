@@ -2,9 +2,10 @@ describe("JavaScript: The Other Parts", () => {
   it("Bonus 1: scope extra", () => {
     //_ (Math)
     {
-      expect(cos(PI)).toBe(-1);
+      expect(cos(PI)).toBe(-1); //
     }
   });
+
 
   it("Bonus 2: syndrome des points-virgules", () => {
     function f() {
@@ -15,7 +16,7 @@ describe("JavaScript: The Other Parts", () => {
   });
 
   it("Bonus 3: décalage horaire", () => {
-    var aujourdhui = new Date(2017, _, 22);
+    var aujourdhui = new Date(2017, 09, 22); 
     expect(aujourdhui.toLocaleDateString()).toBe("22/09/2017");
   });
 
