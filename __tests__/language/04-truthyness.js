@@ -8,7 +8,7 @@ describe("Truthyness", () => {
   }
 
   it("Truthyness - 1", () => {
-    expect(isTruthy(3)).toBe(_);
+    expect(isTruthy(3)).toBe(true);
   });
 
   it("Truthyness - 2", () => {
