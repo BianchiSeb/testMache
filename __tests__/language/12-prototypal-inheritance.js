@@ -12,7 +12,7 @@ describe("Prototype inheritance", () => {
   var eric = new Mammal("Eric");
 
   it("Prototype inheritance - 1", () => {
-    expect(eric.sayHi()).toBe(_);
+    expect(eric.sayHi()).toBe("Hello, my name is Eric");
   });
 
   Mammal.prototype.favouriteSaying = function() {
