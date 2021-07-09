@@ -9,8 +9,8 @@ describe("Prototype chain", () => {
   child.b = 2;
 
   it("Prototype chain - 1", () => {
-    expect(child.hasOwnProperty("a")).toBe("true");
-    expect(child.hasOwnProperty("b")).toBe("true");
+    expect(child.hasOwnProperty("a")).toBe(true);
+    expect(child.hasOwnProperty("b")).toBe(true);
   });
 
   it("Prototype chain - 2", () => {
@@ -24,7 +24,7 @@ describe("Prototype chain", () => {
   });
 
   it("Prototype chain - 4", () => {
-    expect(child.hasOwnProperty("c")).toBe();
+    expect(child.hasOwnProperty("c")).toBe(false);
   });
 
   it("Prototype chain - 5", () => {
