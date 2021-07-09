@@ -34,9 +34,9 @@ describe("Functions and Closure", () => {
       var total = 0;
       for (const arg of args) {
         // complete the implementation of this method so that it returns the sum of its arguments
-        // _
+        total += arg;
       }
-      // _
+      return total;
     }
 
     expect(add(1, 2, 3, 4, 5)).toBe(15);
@@ -50,7 +50,7 @@ describe("Functions and Closure", () => {
 
     var result = invokee.call("I am this!", "Where did it come from?");
 
-    expect(result).toBe(_);
+    expect(result).toBe("I am this!" + "Where did it come from?");
   });
 
   it("using apply to invoke function", () => {
@@ -60,6 +60,6 @@ describe("Functions and Closure", () => {
 
     var result = invokee.apply("I am this!", ["I am arg1", "I am arg2"]);
 
-    expect(result).toBe(_);
+    expect(result).toBe("I am this!" + "I am arg1" + "I am arg2");
   });
 });
