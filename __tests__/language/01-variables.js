@@ -2,6 +2,10 @@ describe("Variables", () => {
  nom = "Pierre";
 
   it("Variables - 1", () => {
+    let nom = "Thierry";
+    let window = {
+      nom: "Thierry"
+    }
     expect(nom).toBe("Thierry");
     expect(window.nom).toBe("Thierry");
   });
