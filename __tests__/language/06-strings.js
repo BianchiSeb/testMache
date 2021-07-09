@@ -11,8 +11,8 @@ describe("Strings", () => {
   it("Strings - 2", () => {
     var fruit = "apple";
     var dish = "pie";
-    expect(_).toBe("apple pie."); // Use concatenation
-    expect(_).toBe("apple pie."); // Use template strings
+    expect(fruit + " " + dish + ".").toBe("apple pie."); // Use concatenation
+    expect(`${fruit} ${dish}.`).toBe("apple pie."); // Use template strings
   });
 
   it("Strings - 3", () => {
