@@ -28,7 +28,7 @@ describe("Coercion", () => {
   });
 
   it("Coercion - 8", () => {
-    expect(1 + true === "1true").toBe(_);
+    expect(1 + true === "1true").toBe(false);
   });
 
   it("Coercion - 9", () => {
