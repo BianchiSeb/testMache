@@ -3,7 +3,7 @@ describe("This", () => {
     var person = {
       name: "bob",
       intro() {
-        return "Hello, my name is " + _;
+        return "Hello, my name is " + this.name;
       },
     };
     expect(person.intro()).toBe("Hello, my name is bob");
@@ -21,8 +21,8 @@ describe("This", () => {
 
     window.name = "Peter";
 
-    expect(_).toBe("Hello, my name is Peter");
-  });
+    expect(person.intro.call({name:"Peter"})).toBe("Hello, my name is Peter");
+  }); //pas bon
 
   it("This - 3", () => {
     var person = {
@@ -32,7 +32,7 @@ describe("This", () => {
       },
     };
 
-    var message = person.intro.call(_);
+    var message = person.intro.call({name:"Frank"});
     expect(message).toBe("Hello, my name is Frank");
   });
 });
