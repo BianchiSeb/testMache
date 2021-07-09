@@ -22,7 +22,7 @@ describe("Strings", () => {
 
   it("Strings - 4", () => {
     var result = "hello";
-    expect(result.length).toBe(_);
+    expect(result.length).toBe(5);
   });
 
   it("Strings - 5", () => {
