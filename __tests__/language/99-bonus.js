@@ -1,6 +1,8 @@
 describe("JavaScript: The Other Parts", () => {
   it("Bonus 1: scope extra", () => {
     //_ (Math)
+    var PI = Math.PI;
+    var cos = (nb) => { return Math.cos(nb)}
     {
       expect(cos(PI)).toBe(-1);
     }
