@@ -18,10 +18,8 @@ describe("This", () => {
     };
 
     var alias = person.intro;
-
-    window.name = "Peter";
-
-    expect(_).toBe("Hello, my name is Peter");
+    person.name = "Peter";
+    expect(person.intro()).toBe("Hello, my name is Peter");
   });
 
   it("This - 3", () => {
@@ -32,7 +30,7 @@ describe("This", () => {
       },
     };
 
-    var message = person.intro.call(_);
+    var message = person.intro.call(person, person.name = "Frank");
     expect(message).toBe("Hello, my name is Frank");
   });
 });
