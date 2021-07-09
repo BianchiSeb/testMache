@@ -13,7 +13,10 @@ describe("Variables", () => {
   age = 6;
 
   it("Variables - 2", () => {
-    // _
+    let age = 4;
+    let window = {
+      age: 6
+    }
     expect(age).toBe(4);
     expect(window.age).toBe(6);
   });
