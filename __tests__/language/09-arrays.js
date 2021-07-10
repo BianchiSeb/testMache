@@ -7,12 +7,12 @@ describe("Arrays", () => {
   });
 
   it("Arrays - 2", () => {
-    expect(typeof []).toBe(_);
+    expect(typeof []).toBe("object");
   });
 
   it("Arrays - 3", () => {
     var collection = ["a", "b", "c"];
-    expect(collection._).toBe(3);
+    expect(collection.length).toBe(3);
   });
 
   it("Arrays - 4", () => {
@@ -25,40 +25,44 @@ describe("Arrays", () => {
       "Saturday",
       "Sunday",
     ];
-    var workingWeek = daysOfWeek.splice(_, _);
-    expect(daysOfWeek).toEqual(_);
-    expect(workingWeek).toEqual(_);
+    var workingWeek = daysOfWeek.splice(0, 0);
+    expect(daysOfWeek).toEqual(["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"])
+    expect(workingWeek).toEqual([]);
   });
 
   it("Arrays - 5", () => {
     var collection = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    var odd = collection.filter(_);
+    var odd = collection.filter(collection => collection % 2 != 0);
     expect(odd).toEqual([1, 3, 5, 7, 9]);
   });
 
+  function sum (previousValue, currentValue) {
+    return previousValue * currentValue;
+  }
+
   it("Arrays - 6", () => {
     var collection = [1, 2, 3, 4];
-    var result = collection.reduce(_);
+    var result = collection.reduce(sum);
     expect(result).toBe(24);
   });
 
   it("Arrays - 7", () => {
     var collection = [1, 2, 3];
-    expect(_).toEqual([2, 4, 6]);
+    expect(collection.map(x => x * 2)).toEqual([2, 4, 6]);
   });
 
   it("Arrays - 8", () => {
     var array1 = [1, 2, 3];
     var array2 = [4, 5, 6];
-    expect(_).toEqual([1, 2, 3, 4, 5, 6]);
-    expect([_]).toEqual([1, 2, 3, 4, 5, 6]);
+    expect(array1.concat(array2)).toEqual([1, 2, 3, 4, 5, 6]);
+    expect([].concat(array1.concat(array2))).toEqual([1, 2, 3, 4, 5, 6]);
   });
 
   it("Arrays - stack methods", () => {
     var stack = [];
     stack.push("first");
     stack.push("second");
-    expect(stack.pop()).toBe(_);
-    expect(stack.pop()).toBe(_);
+    expect(stack.pop()).toBe("second");
+    expect(stack.pop()).toBe("first");
   });
 });

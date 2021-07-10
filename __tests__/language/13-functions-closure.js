@@ -5,26 +5,28 @@ describe("Functions and Closure", () => {
       result = "b";
     }
     changeResult();
-    expect(result).toBe(_);
+    expect(result).toBe("b");
   });
 
   it("Functions and Closure - 2", () => {
-    var action = _;
+    var action = function(x){
+      return 12;
+    };
     expect(action(4)).toBe(12);
   });
 
   it("Functions and Closure - 3", () => {
     var value = "orange";
 
-    (function(_) {
+    (function(val) {
       var anotherValue = "blue";
       expect(val).toBe("orange");
-      expect(typeof value).toBe(_);
-      expect(typeof anotherValue).toBe(_);
+      expect(typeof value).toBe("string");
+      expect(typeof anotherValue).toBe("string");
     })(_);
 
-    expect(typeof anotherValue).toBe(_);
-    expect(typeof value).toBe(_);
+    expect(typeof anotherValue).toBe(undefined);
+    expect(typeof value).toBe("string");
   });
 
   it("Functions and Closure - 4", () => {
@@ -32,9 +34,9 @@ describe("Functions and Closure", () => {
       var total = 0;
       for (const arg of args) {
         // complete the implementation of this method so that it returns the sum of its arguments
-        // _
+        total += arg;
       }
-      // _
+      return total;
     }
 
     expect(add(1, 2, 3, 4, 5)).toBe(15);
@@ -48,7 +50,7 @@ describe("Functions and Closure", () => {
 
     var result = invokee.call("I am this!", "Where did it come from?");
 
-    expect(result).toBe(_);
+    expect(result).toBe("I am this!" + "Where did it come from?");
   });
 
   it("using apply to invoke function", () => {
@@ -58,6 +60,6 @@ describe("Functions and Closure", () => {
 
     var result = invokee.apply("I am this!", ["I am arg1", "I am arg2"]);
 
-    expect(result).toBe(_);
+    expect(result).toBe("I am this!" + "I am arg1" + "I am arg2");
   });
 });
