@@ -4,8 +4,8 @@ describe("Reflection : ", () => {
     var values = [];
     var person = { name: "Thierry LAU", age: 30, unemployed: true };
     for (const propertyName in person) {
-      keys.push(_);
-      values.push(_);
+      keys.push(propertyName);
+      values.push(person[propertyName]);
     }
     expect(keys).toEqual(["name", "age", "unemployed"]);
     expect(values).toEqual(["Thierry LAU", 30, true]);
@@ -28,8 +28,8 @@ describe("Reflection : ", () => {
     for (propertyName in b) {
       keys.push(propertyName);
     }
-    expect(keys.length).toBe(_);
-    expect(keys).toEqual(_);
+    expect(keys.length).toBe(2);
+    expect(keys).toEqual(["bprop", "aprop"]);
 
     var ownKeys = [];
     for (propertyName in b) {
@@ -37,15 +37,15 @@ describe("Reflection : ", () => {
         ownKeys.push(propertyName);
       }
     }
-    expect(ownKeys.length).toBe(_);
-    expect(ownKeys).toEqual(_);
+    expect(ownKeys.length).toBe(1);
+    expect(ownKeys).toEqual(["bprop"]);
   });
 
   it("Reflection - 3", () => {
     var a = new A();
     var b = new B();
-    expect(typeof a.constructor).toBe(_);
-    expect(a.constructor.name).toBe(_);
-    expect(b.constructor.name).toBe(_);
+    expect(typeof a.constructor).toBe("function");
+    expect(a.constructor.name).toBe("A");
+    expect(b.constructor.name).toBe("A");
   });
 });
